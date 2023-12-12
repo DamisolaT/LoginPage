@@ -136,12 +136,17 @@ fun LoginScreen(){
                     //What happens when the image is clicked
                 }
             )
+            Image(painter = painterResource(id = R.drawable.gmail),
+                contentDescription = "Clickable google icon",
+                modifier = Modifier.size(24.dp).clickable {
+                    //What happens when the image is clicked
+                }
+            )
+
         }
 
         }
     }
-
-
 @Composable
 fun RememberMe(){
     var isChecked by remember { mutableStateOf(false) }
